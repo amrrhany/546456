@@ -383,25 +383,30 @@ p {
 
 /* ===== Card ===== */
 .project-card{
-    background:#ffffff;
-    padding:2.5rem 2rem;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    gap:1.2rem;
-    border-radius:2rem;
-    box-shadow:0 8px 20px rgba(0,0,0,0.15);
-    cursor:pointer;
-    transition:0.3s ease-in-out;
+    background:linear-gradient(135deg,#1a699a,#a7d8f6);
+    border:1px solid rgb(255, 255, 255);
+    backdrop-filter: blur(6px);
+    padding:8px 18px;
+    border-radius:20px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s ease;
+    border:none;
 }
 
-/* Hover Effect */
-.project-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 12px 28px rgba(0,0,0,0.25);
+/* ===== Button Text Color ===== */
+.project-card .btn{
+    color:#0066ff;   /* ← لون النص أزرق */
+    background:transparent /* ← خلفية الزر بيضاء ظاهرة */
 }
+
+/* Hover stays same */
+.project-card .btn:hover{
+    background:#0184ff;
+    color:#ffffff;
+    transform:scale(1.05);
+}
+
 
 /* ===== Image ===== */
 .project-card img{
@@ -1272,3 +1277,4 @@ html {
     height:22px;
   }
 }
+
